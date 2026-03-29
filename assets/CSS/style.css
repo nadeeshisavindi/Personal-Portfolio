@@ -323,25 +323,25 @@ nav {
 #about-stats {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    gap: 15px;
-    margin-top: 8px;
+    gap: 14px;
+    margin-top: 28px;
 }
 
 .stat-card {
     background: var(--pink-light);
     border-radius: 14px;
-    padding: 30px 30px;
-    border: 4px solid var(--pink);
+    padding: 40px 40px ;
+    border: 2px solid var(--pink);
 }
 
 .stat-num {
     font-family: 'Press Start 2P', monospace;
-    font-size: 1.5rem;
+    font-size: 1.4rem;
     color: var(--pink-dark);
 }
 
 .stat-label {
-    font-size: 1rem;
+    font-size: 0.78rem;
     color: #888;
     margin-top: 6px;
 }
@@ -392,7 +392,7 @@ nav {
 
 
 
-/* works*/
+/* ── WORKS ── */
 #works {
     width: 100%;
     background-color: var(--dark);
@@ -433,7 +433,35 @@ nav {
     line-height: 1.5;
 }
 
+#works-grid {
+    position: relative;
+    z-index: 1;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
 
+.work-card {
+    background-color: rgba(255,255,255,0.04);
+    border-radius: 18px;
+    overflow: hidden;
+    border: 2px solid rgba(244,114,182,0.3);
+    transition: border-color 0.2s, transform 0.2s;
+}
+
+.work-card:hover {
+    border-color: var(--pink);
+    transform: translateY(-15px);
+}
+
+.work-thumb {
+    height: 160px;
+    background: linear-gradient(135deg, #3d0020, #6b0f3a);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-bottom: 2px solid rgba(244,114,182,0.25);
+}
 
 
 /* footer */
