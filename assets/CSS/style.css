@@ -394,7 +394,7 @@ nav {
 
 /* works*/
 #works {
-
+    width: 100%;
     background-color: var(--dark);
     padding: 80px;
     position: relative;
@@ -411,6 +411,27 @@ nav {
     background-size: 40px 40px;
 }
 
+#works-label {
+    position: relative;
+    z-index: 1;
+    font-family: 'Press Start 2P', monospace;
+    font-size: 6rem;
+    letter-spacing: 0.8rem;
+    text-transform: uppercase;
+    color: var(--pink);
+    margin-bottom: 14px;
+}
+
+#works-title {
+    position: relative;
+    z-index: 1;
+    font-family: 'Press Start 2P', monospace;
+    font-size: 30px;
+    font-weight: 400;
+    color: var(--white);
+    margin-bottom: 48px;
+    line-height: 1.5;
+}
 
 
 
