@@ -148,7 +148,7 @@ nav {
 .mini-star:nth-child(odd)  { animation-duration: 2.5s; }
 .mini-star:nth-child(even) { animation-duration: 3.8s; }
 
-@keyframes twinkel {
+@keyframes twinkle {
     from { opacity: 0.3; transform: scale(0.85) rotate(0deg);   }
     to   { opacity: 1;   transform: scale(1.15) rotate(20deg);  }
 }
