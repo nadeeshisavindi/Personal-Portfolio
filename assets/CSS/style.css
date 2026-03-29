@@ -18,7 +18,7 @@ body {
     overflow-x: hidden;
 }
 
-/* ── NAVBAR ── */
+/* navbar */
 nav {
     position: fixed;
     top: 0; left: 0;
@@ -41,22 +41,11 @@ nav {
     text-decoration: none;
 }
 
-#logo-box {
-    width: 36px;
-    height: 36px;
-    background-color: var(--pink);
-    border-radius: 6px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-family: 'Press Start 2P', monospace;
-    font-size: 0.85rem;
-    color: var(--dark);
-}
+
 
 #logo-name {
-    font-family: 'Press Start 2P', monospace;
-    font-size: 0.6rem;
+    font-family: 'Island Moments', cursive;
+    font-size:2rem;
     color: var(--white);
     letter-spacing: 0.05em;
 }
@@ -112,7 +101,7 @@ nav {
     fill: currentColor;
 }
 
-/* ── HERO ── */
+/* hero  */
 #hero {
     width: 100%;
     min-height: 100vh;
@@ -125,14 +114,20 @@ nav {
     align-items: center;
 }
 
+
+
+
+
+/*grid  controlle*/
+
 #hero::before {
     content: '';
     position: absolute;
     inset: 0;
     background-image:
-            linear-gradient(var(--grid-color) 1px, transparent 1px),
-            linear-gradient(90deg, var(--grid-color) 1px, transparent 1px);
-    background-size: 40px 40px;
+            linear-gradient(white 4px, transparent 1px),
+            linear-gradient(90deg, white 4px, transparent 1px);
+    background-size: 80px 80px;
     z-index: 0;
 }
 
@@ -198,7 +193,17 @@ nav {
     object-position: top;
 }
 
-/* ── BIO BANNER ── */
+
+
+
+
+
+
+
+
+
+
+/* bio banner */
 #bio-banner {
     width: 100%;
     background-color: var(--dark);
@@ -223,7 +228,15 @@ nav {
     font-weight: 700;
 }
 
-/* ── FOOTER ── */
+
+
+
+
+
+
+
+
+/* footer */
 footer {
     width: 100%;
     background-color: var(--dark);
