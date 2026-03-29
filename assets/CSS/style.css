@@ -391,6 +391,30 @@ nav {
 
 
 
+
+/* works*/
+#works {
+
+    background-color: var(--dark);
+    padding: 80px;
+    position: relative;
+    overflow: hidden;
+}
+
+#works::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background-image:
+            linear-gradient(rgba(244,114,182,0.08) 1px, transparent 1px),
+            linear-gradient(90deg, rgba(244,114,182,0.08) 1px, transparent 1px);
+    background-size: 40px 40px;
+}
+
+
+
+
+
 /* footer */
 footer {
     width: 100%;
