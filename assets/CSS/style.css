@@ -612,7 +612,7 @@ z-index: 0;
     min-height: 120px;
 }
 
-button
+/*button*/
 #btn-send {
     padding: 13px 30px;
     background-color: black;
