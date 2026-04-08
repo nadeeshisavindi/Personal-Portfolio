@@ -577,7 +577,10 @@ z-index: 0;
     font-family: 'Press Start 2P', monospace;
     font-size: 30px;
     font-weight: 400;
-
+    color: var(--white);
+    margin-bottom: 48px;
+    line-height: 1.5;
+    color: var(--dark);
 }
 
 #contact-form {
