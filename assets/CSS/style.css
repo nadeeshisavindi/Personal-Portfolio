@@ -546,16 +546,14 @@ nav {
     width: 100%;
     background-color: var(--pink-light);
     border-top: 3px solid var(--pink);
-    border-top: 3px solid var(--pink);
-    border-bottom: 3px solid var(--pink);
-    padding: 40px 60px;
-
+    padding: 90px;
     display: flex;
-    gap: 20px;
-    align-items: center;
+
+    align-items: flex-start;
     position: relative;
     overflow: hidden;
 }
+
 
 #contact-text {
     flex: 1;
@@ -563,19 +561,27 @@ nav {
     z-index: 1;
 }
 
+
 #contact-label {
+    position: relative;
+    z-index: 1;
     font-family: 'Press Start 2P', monospace;
-    font-size: 1rem;
-    letter-spacing: 0.18em;
+    font-size: 5rem;
+    letter-spacing: 0.8rem;
     text-transform: uppercase;
-    color: var(--pink-dark);
+    color: var(--pink);
     margin-bottom: 14px;
 }
 
+
 #contact-title {
     font-family: 'Playfair Display', serif;
-    font-size: 2.4rem;
-    font-weight: 700;
+    position: relative;
+    z-index: 1;
+    font-family: 'Press Start 2P', monospace;
+    font-size: 2rem;
+    letter-spacing: 0.8rem;
+    text-transform: uppercase;
     color: var(--dark);
     margin-bottom: 16px;
 }
