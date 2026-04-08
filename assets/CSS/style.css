@@ -546,14 +546,16 @@ nav {
     width: 100%;
     background-color: var(--pink-light);
     border-top: 3px solid var(--pink);
-    padding: 90px;
-    display: flex;
+    border-top: 3px solid var(--pink);
+    border-bottom: 3px solid var(--pink);
+    padding: 40px 60px;
 
-    align-items: flex-start;
+    display: flex;
+    gap: 20px;
+    align-items: center;
     position: relative;
     overflow: hidden;
 }
-
 
 #contact-text {
     flex: 1;
