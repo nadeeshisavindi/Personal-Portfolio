@@ -559,6 +559,13 @@ z-index: 0;
     flex: 1;
 }
 
+#contact-label {
+    position: relative;
+    z-index: 1;
+    font-family: 'Press Start 2P', monospace;
+    font-size: 5rem;
+
+}
 
 
 
