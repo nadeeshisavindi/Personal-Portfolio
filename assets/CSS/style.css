@@ -646,7 +646,7 @@ z-index: 0;
 }
 
 #btn-send:hover {
-    background-color: var(--pink-dark); /* FIXED */
+    background-color: var(--pink-dark);
     color: white;
 }
 
