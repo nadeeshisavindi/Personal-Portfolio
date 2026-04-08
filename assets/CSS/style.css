@@ -579,7 +579,7 @@ z-index: 0;
     font-weight: 400;
     color: var(--white);
     margin-bottom: 48px;
-    line-height: 1.5;
+    line-height: 0.5;
     color: var(--dark);
 }
 
