@@ -564,7 +564,10 @@ z-index: 0;
     z-index: 1;
     font-family: 'Press Start 2P', monospace;
     font-size: 5rem;
-
+    letter-spacing: 0.8rem;
+    text-transform: uppercase;
+    color: var(--pink);
+    margin-bottom: 14px;
 }
 
 
