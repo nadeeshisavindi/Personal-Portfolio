@@ -335,16 +335,29 @@ nav {
     gap: 14px;
     margin-top: 28px;
 }
-#about::before {
+
+
+#about:before{
     content: '';
     position: absolute;
     inset: 0;
+
     background-image:
             linear-gradient(white 4px, transparent 1px),
             linear-gradient(90deg, white 4px, transparent 1px);
     background-size: 80px 80px;
-    z-index: 0;
+
+
+z-index: 0;
 }
+
+#about-text, #about-stats {
+    position: relative;
+    z-index: 2;
+}
+
+
+
 
 .stat-card {
     background: var(--pink-light);
@@ -511,6 +524,25 @@ nav {
 
 /*contact*/
 
+
+#contact :before{
+    content: '';
+    position: absolute;
+    inset: 0;
+
+    background-image:
+            linear-gradient(white 4px, transparent 1px),
+            linear-gradient(90deg, white 4px, transparent 1px);
+    background-size: 80px 80px;
+
+
+    z-index: 0;
+}
+
+#contact -text, #contact -stats {
+    position: relative;
+    z-index: 2;
+}
 
 #contact {
     width: 100%;
