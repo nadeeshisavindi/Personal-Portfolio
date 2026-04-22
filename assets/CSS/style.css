@@ -526,12 +526,21 @@ z-index: 0;
 
 
 .work-card {
+    cursor: pointer;
     background-color: rgba(255,255,255,0.04);
     border-radius: 18px;
     overflow: hidden;
     border: 2px solid rgba(244,114,182,0.3);
     transition: border-color 0.2s, transform 0.2s;
 }
+
+
+#works-grid a {
+    text-decoration: none;
+    display: block;
+}
+
+
 
 .work-card:hover {
     border-color: var(--pink);
@@ -724,6 +733,8 @@ z-index: 0;
     background-color: var(--pink-dark);
     color: white;
 }
+
+
 
 
 
