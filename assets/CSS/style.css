@@ -534,14 +534,6 @@ z-index: 0;
     transition: border-color 0.2s, transform 0.2s;
 }
 
-
-#works-grid a {
-    text-decoration: none;
-    display: block;
-}
-
-
-
 .work-card:hover {
     border-color: var(--pink);
     transform: translateY(-20px);
