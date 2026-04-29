@@ -19,6 +19,7 @@ body {
     overflow-x: hidden;
 }
 
+
 /* navbar */
 nav {
     position: fixed;
@@ -144,7 +145,8 @@ body {
     width: 100%;
     min-height: 100vh;
     padding-top: 64px;
-    background-color: var(--pink-light);
+    background-color: var(--dark);
+        /*background-color: var(--pink-light);*/
     position: relative;
     overflow: hidden;
     display: flex;
@@ -164,9 +166,12 @@ body {
     position: absolute;
     inset: 0;
     background-image:
-            linear-gradient(white 4px, transparent 1px),
-            linear-gradient(90deg, white 4px, transparent 1px);
-    background-size: 80px 80px;
+
+            linear-gradient(rgba(244,114,182,0.08) 3px, transparent 1px),
+            linear-gradient(90deg, rgba(244,114,182,0.08) 3px, transparent 1px);
+            /*linear-gradient(white 4px, transparent 1px),*/
+            /*linear-gradient(90deg, white 4px, transparent 1px);*/
+    background-size: 40px 40px; /* issarin thibbe 80px 80px*/
     z-index: 0;
 }
 
@@ -753,6 +758,7 @@ z-index: 0;
     animation: rotate 18s linear infinite;
     justify-self: center;
 }
+
 @keyframes rotate {
     from { transform: rotateY(0deg); }
     to   { transform: rotateY(360deg); }
