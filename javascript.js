@@ -1,5 +1,4 @@
 
-<script>
     const a3d = document.querySelector(".a3d");
 
 
@@ -24,11 +23,14 @@
     function animate() {
     currentY += (targetY - currentY) * 0.08;
     currentX += (targetX - currentX) * 0.08;
+    a3d.style.transform =
+    `rotateY(${currentY}deg) rotateX(${currentX}deg)`;
+
+    requestAnimationFrame(animate);
 
 }
     animate();
 
-</script>
 
 
 
