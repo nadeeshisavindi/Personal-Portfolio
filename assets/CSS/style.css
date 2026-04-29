@@ -716,10 +716,16 @@ z-index: 0;
 
     display: grid;
     transform-style: preserve-3d;
+    animation: rotate 18s linear infinite;
+    justify-self: center;
 }
 
 /* 3D positioning */
 .card {
+    --n: 3;
+    --angle: calc(360deg / var(--n));
+
+    grid-area: 1 / 1;
 
 }
 
