@@ -719,6 +719,9 @@ z-index: 0;
     animation: rotate 18s linear infinite;
     justify-self: center;
 }
+@keyframes rotate {
+
+}
 
 /* 3D positioning */
 .card {
@@ -733,6 +736,7 @@ z-index: 0;
 /*git add .*/
 /*git commit -m " update scene work"*/
 /*git push origin master*/
+
 
 
 
