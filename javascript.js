@@ -14,7 +14,7 @@
     const y = (e.clientY / window.innerHeight) - 0.5;
 
     targetY = x * 80;
-    targetX = y * 40;
+    targetX = -y * 40;
 
 
 

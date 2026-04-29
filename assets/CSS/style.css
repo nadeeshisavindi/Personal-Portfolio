@@ -755,7 +755,7 @@ z-index: 0;
 .work-card:hover {
     border-color: var(--pink);
     transform: scale(1.05);
-
+    box-shadow: 0 15px 30px rgba(244,114,182,0.3);
 }
 
 .work-thumb {
