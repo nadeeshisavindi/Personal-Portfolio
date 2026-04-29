@@ -754,6 +754,8 @@ z-index: 0;
 
 
 .work-card:hover {
+    border-color: var(--pink);
+    transform: scale(1.05);
 
 }
 
