@@ -732,6 +732,8 @@ z-index: 0;
 
     grid-area: 1 / 1;
 
+
+    /* cards space */
     transform:
             rotateY(calc(var(--i) * var(--angle)))
             translateZ(280px);
@@ -739,9 +741,28 @@ z-index: 0;
 }
 
 
-/*git add .*/
-/*git commit -m " update scene work rotate"*/
-/*git push origin master*/
+
+.work-card {
+    width: 320px;
+    min-height: 400px; /*card eke size*/
+    background-color: rgba(255,255,255,0.04);
+    border-radius: 18px;
+    overflow: hidden;
+    border: 2px solid rgba(244,114,182,0.3);
+    transition: all 0.3s ease;
+}
+
+
+.work-card:hover {
+
+}
+
+.work-thumb {
+    height: 180px; /* optional better image size */
+}
+git add .
+git commit -m " update scene work rotate after "
+git push origin master
 
 
 
