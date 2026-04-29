@@ -748,6 +748,8 @@ z-index: 0;
     background-color: rgba(255,255,255,0.04);
     border-radius: 18px;
     overflow: hidden;
+    border: 2px solid rgba(244,114,182,0.3);
+    transition: all 0.3s ease;
 
 }
 
@@ -762,10 +764,6 @@ z-index: 0;
     height: 180px; /* optional better image size */
 }
 
-
-/*git add .*/
-/*git commit -m " update scene work rotate after "*/
-/*git push origin master*/
 
 
 
