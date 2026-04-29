@@ -732,11 +732,15 @@ z-index: 0;
 
     grid-area: 1 / 1;
 
+    transform:
+            rotateY(calc(var(--i) * var(--angle)))
+            translateZ(280px);
+
 }
 
 
 /*git add .*/
-/*git commit -m " update scene work"*/
+/*git commit -m " update scene work rotate"*/
 /*git push origin master*/
 
 
