@@ -22,8 +22,11 @@
 });
 
     function animate() {
+    currentY += (targetY - currentY) * 0.08;
+    currentX += (targetX - currentX) * 0.08;
 
 }
+    animate();
 
 </script>
 
