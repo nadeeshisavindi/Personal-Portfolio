@@ -720,6 +720,8 @@ z-index: 0;
     justify-self: center;
 }
 @keyframes rotate {
+    from { transform: rotateY(0deg); }
+    to   { transform: rotateY(360deg); }
 
 }
 
