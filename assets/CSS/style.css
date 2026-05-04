@@ -166,15 +166,14 @@ body {
 
             linear-gradient(rgba(244,114,182,0.08) 3px, transparent 1px),
             linear-gradient(90deg, rgba(244,114,182,0.08) 3px, transparent 1px);
-            /*linear-gradient(white 4px, transparent 1px),*/
-            /*linear-gradient(90deg, white 4px, transparent 1px);*/
+
     background-size: 40px 40px; /* issarin thibbe 80px 80px*/
     z-index: 0;
 }
 
 
 
-/* STARS CONTAINER */
+
 .stars {
     position: absolute;
     inset: 0;
@@ -182,7 +181,7 @@ body {
     pointer-events: none;
 }
 
-/* STAR BASE */
+
 .stars::after {
     content: "";
     position: absolute;
