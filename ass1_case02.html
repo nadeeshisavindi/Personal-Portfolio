@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Car Animation</title>
+
+    <style>
+
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body{
+            overflow: hidden;
+        }
+
+
+        .content{
+            width: 100%;
+            height: 100vh;
+
+            position: relative;
+            overflow: hidden;
+
+            background-image: url("../assets/lib/images/sky.jpg");
+            background-size: cover;
+            background-position: center;
+        }
+
+        .city{
+            width: 500%;
+            height: 250px;
+
+            position: absolute;
+            bottom: 200px;
+
+            background-image: url("../assets/lib/images/city.jpg");
+            background-repeat: repeat-x;
+            background-size: contain;
+
+            animation: cityMove 10s linear infinite;
+        }
+
+
+        .road{
+            width: 500%;
+            height: 200px;
+
+            position: absolute;
+            bottom: 0;
+
+            background-image: url("../assets/lib/images/road.jpg");
+            background-repeat: repeat-x;
+            background-size: contain;
+
+            animation: roadMove 5s linear infinite;
+        }
+
+        .car-body{
+            width: 400px;
+
+            position: absolute;
+            left: 500px;
+            bottom: 90px;
+
+            z-index: 1000;
+        }
+
+
+        .car-wheel{
+            width: 75px;
+            height: 75px;
+
+            position: absolute;
+            bottom: 92px;
+
+            z-index: 1001;
+
+            animation: wheelRotate 1s linear infinite;
+        }
+
+        #wheel1{
+            left: 535px;
+        }
+
+        #wheel2{
+            left: 778px;
+        }
+
+
+        @keyframes cityMove{
+            from{
+                transform: translateX(0);
+            }
+
+            to{
+                transform: translateX(-2000px);
+            }
+        }
+
+
+        @keyframes roadMove{
+            from{
+                transform: translateX(0);
+            }
+
+            to{
+                transform: translateX(-2000px);
+            }
+        }
+
+
+        @keyframes wheelRotate{
+            from{
+                transform: rotate(0deg);
+            }
+
+            to{
+                transform: rotate(360deg);
+            }
+        }
+
+    </style>
+</head>
+
+<body>
+
+<div class="content">
+
+
+    <div class="city"></div>
+
+
+    <div class="road"></div>
+
+    <img src="../assets/lib/images/car.jpg"
+         class="car-body"
+         alt="car">
+
+    <img src="../assets/lib/images/wheel.jpg"
+         class="car-wheel"
+         id="wheel1"
+         alt="wheel">
+
+
+    <img src="../assets/lib/images/wheel.jpg"
+         class="car-wheel"
+         id="wheel2"
+         alt="wheel">
+
+</div>
+
+</body>
+</html>
