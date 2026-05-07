@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="f977fc49-3ba7-49de-8874-e59599459e37" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/../Education.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CSS/Education.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CSS/exercise.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CSS/note.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CSS/project.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/PDF/DBMS .pdf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/PDF/Layered Architecture ( Software Architecture and Design Patterns ) (3).pdf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/PDF/OOP.pdf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/PDF/PRF.pdf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/images/batchphoto.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/images/bestfriend.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/images/dinshini.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/images/friends.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/images/my1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/images/my2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/images/my3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/images/my4.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/images/my5.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/images/my6.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/images/rusini.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/images/sky.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/images/temple.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../project.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Home.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CSS/gallery.css" beforeDir="false" afterPath="$PROJECT_DIR$/CSS/gallery.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CSS/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/CSS/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/javascript.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/javascript.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/images/539b8a_7a52ab64e14c499a847b88ab4af4cf39~mv2.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../exercise.html" beforeDir="false" afterPath="$PROJECT_DIR$/../exercise.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../gallery.html" beforeDir="false" afterPath="$PROJECT_DIR$/../gallery.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../note.html" beforeDir="false" afterPath="$PROJECT_DIR$/../note.html" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="ProjectColorInfo"><![CDATA[{
+  "associatedIndex": 6,
+  "fromUser": false
+}]]></component>
+  <component name="ProjectId" id="3DNzP2TK7z2OWmWurUy4JLAZqsc" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.typescript.service.memoryLimit.init": "true",
+    "codeWithMe.voiceChat.enabledByDefault": "false",
+    "git-widget-placeholder": "master",
+    "kotlin-language-version-configured": "true",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm"
+  }
+}]]></component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="f977fc49-3ba7-49de-8874-e59599459e37" name="Changes" comment="" />
+      <created>1778137287287</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1778137287287</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>

@@ -1,0 +1,326 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --pink:      #ffb3d9;
+    --pink-dark: #ff80bf;
+    --pink-soft: rgba(255, 179, 217, 0.12);
+    --white:     #ffffff;
+    --dark:      #111111;
+    --border:    rgba(255, 179, 217, 0.2);
+}
+
+body {
+    font-family: 'DM Sans', sans-serif;
+    background: #0d0f12;
+    color: #ff4da6;
+    min-height: 100vh;
+}
+
+/* Navbar */
+nav {
+    display: flex;
+    align-items: center;
+    padding: 1.2rem 2rem;
+    border-bottom: 1px solid rgba(255,255,255,0.07);
+    position: sticky;
+    top: 0;
+    background: #0d0f12;
+    z-index: 100;
+}
+
+#logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    text-decoration: none;
+}
+
+#logo-name {
+    font-family: 'Island Moments', cursive;
+    font-size: 2rem;
+    color: white;
+    letter-spacing: 0.05em;
+}
+
+#gallery-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2rem 2rem 1.5rem;
+}
+
+#gallery-title {
+    font-family: 'Press Start 2P', monospace;
+    font-size: 3rem;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    text-shadow: 4px 4px 0 black, 7px 7px 0 black;
+    color: white;
+    margin-bottom: 14px;
+}
+
+#back-btn {
+    gap: 8px;
+    text-decoration: none;
+    color: #9ca3af;
+    font-size: 14px;
+    padding: 8px 16px;
+    border: 1px solid rgba(255,255,255,0.12);
+    border-radius: 10px;
+    transition: color 0.2s, border-color 0.2s;
+}
+
+#back-btn:hover {
+    color: #fff;
+    background-color: rgba(255,255,255,0.3);
+}
+
+
+/* MAIN CARDS */
+#MainCaseSection {
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+
+/* CARD */
+.c {
+    width: 260px;
+    height: 320px;
+    background: #141414;
+    border: 1px solid var(--border);
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    transition: 0.3s;
+}
+
+.c:hover {
+    transform: translateY(-10px);
+    border-color: var(--pink);
+    box-shadow: 0 0 25px var(--pink-soft);
+}
+
+/* CIRCLE */
+.caseBorder {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    border: 2px solid var(--pink);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.caseImg {
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    background: #000;
+    border: 1px solid var(--border);
+}
+
+/* BUTTON */
+.caseButton {
+    text-decoration: none;
+    background: var(--pink);
+    color: #000;
+    padding: 10px 25px;
+    border-radius: 50px;
+    font-weight: bold;
+    border: 1px solid transparent;
+    transition: 0.3s;
+}
+
+.caseButton:hover {
+    background: transparent;
+    color: var(--pink);
+    border: 1px solid var(--pink);
+}
+
+/* CASE SECTION */
+.case {
+    width: 100%;
+    text-align: center;
+    margin-top: 60px;
+}
+
+.caseTopic {
+    font-size: 24px;
+    margin-bottom: 30px;
+    color: var(--white);
+}
+
+.caseTopic span {
+    color: var(--pink);
+}
+
+/* GRID */
+.caseSection {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 25px;
+    width: 100%;
+    max-width: 1200px;
+}
+
+/* CASE CARDS */
+.case01Card,
+.case02Card {
+    background: #141414;
+    border: 1px solid var(--border);
+    border-radius: 20px;
+    padding: 20px;
+    transition: 0.3s;
+}
+
+.case01Card:hover,
+.case02Card:hover {
+    transform: translateY(-8px);
+    border-color: var(--pink);
+    box-shadow: 0 0 15px var(--pink-soft);
+}
+
+/* PIC */
+.assignmentPicBorder {
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    border: 1px solid var(--pink);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 15px;
+}
+
+.assignmentPic {
+    font-size: 18px;
+    font-weight: bold;
+    color: var(--white);
+}
+
+/* BUTTONS */
+.buttonSec {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 14px;
+}
+
+.code, .view {
+    height: 40px;
+    border-radius: 6px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 14px;
+    transition: 0.3s;
+}
+
+.code {
+    background: var(--pink);
+    color: #000;
+    border: 1px solid transparent;
+}
+
+.code:hover {
+    background: transparent;
+    color: var(--pink);
+    border: 1px solid var(--pink);
+}
+
+.view {
+    background: transparent;
+    color: var(--pink);
+    border: 1px solid var(--pink);
+}
+
+.view:hover {
+    background: var(--pink);
+    color: #000;
+    border: 1px solid transparent;
+}
+
+/* RESPONSIVE — TABLET */
+@media (max-width: 1024px) {
+    #gallery-title {
+        font-size: 2.2rem;
+    }
+
+    .c {
+        width: 220px;
+        height: 300px;
+    }
+}
+
+/* RESPONSIVE — MOBILE */
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    #gallery-header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 16px;
+    }
+
+    #gallery-title {
+        font-size: 1.8rem;
+        text-align: center;
+    }
+
+    #MainCaseSection {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .c {
+        width: 90%;
+        max-width: 300px;
+    }
+
+    .caseSection {
+        grid-template-columns: 1fr;
+        justify-items: center;
+    }
+}
+
+/* RESPONSIVE — SMALL MOBILE */
+@media (max-width: 480px) {
+    #gallery-title {
+        font-size: 1.4rem;
+    }
+
+    .topic {
+        font-size: 22px;
+    }
+
+    .caseButton,
+    .code,
+    .view {
+        font-size: 12px;
+        height: 36px;
+    }
+
+    .assignmentPicBorder {
+        width: 70px;
+        height: 70px;
+    }
+
+    .assignmentPic {
+        font-size: 14px;
+    }
+}

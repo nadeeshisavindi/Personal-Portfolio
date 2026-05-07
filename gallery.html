@@ -1,47 +1,138 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="author" content="Nadeeshi">
     <title>Gallery</title>
-
-    <link href="https://fonts.googleapis.com/css2?family=Island+Moments&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=DM+Sans:wght@300;400;500;700&family=Playfair+Display:ital,wght@0,700;0,900;1,700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="assets/CSS/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Island+Moments&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="assets/CSS/gallery.css">
-
-
 </head>
 
 <body>
 
-
-<!-- navbar -->
+<!--navbar-->
 <nav>
-    <a href="#hero" id="logo">
+    <a href="index.html" id="logo">
         <span id="logo-name">Rannul</span>
     </a>
-
 </nav>
 
-
-<!--title-->
+<!--title, button-->
 <div id="gallery-header">
     <h2 id="gallery-title">My Gallery</h2>
-    <a href="index.html" id="back-btn"><b>←</b> Back</a>
+    <a href="index.html#about" id="back-btn">
+        <span class="arrow">←</span>
+        <span>Back</span>
+    </a>
 </div>
 
+<!-- Filters -->
+<div id="filter-bar">
+    <button class="filter-btn active" data-cat="all">All</button>
+    <button class="filter-btn" data-cat="friends">Friends</button>
+    <button class="filter-btn" data-cat="portrait">Portrait</button>
+    <button class="filter-btn" data-cat="landscape">Landscape</button>
+    <button class="filter-btn" data-cat="nature">Nature</button>
+</div>
 
-
+<!-- Grid -->
 <div id="gallery-grid">
 
-
-    <div class="gallery-card">
-        <img src="assets/lib/images/img1.png" alt="">
-        <div class="overlay-text"></div>
+    <div class="gallery-card wide" data-cat="friends">
+        <img src="assets/lib/images/friends.jpg" alt="Friends">
+        <div class="overlay-text">
+            <div class="card-label">First milestone completed</div>
+            <div class="card-cat">Friends</div>
+        </div>
+        <div class="card-badge">View</div>
     </div>
 
+    <div class="gallery-card" data-cat="portrait">
+        <img src="assets/lib/images/my2.jpg" alt="Portrait">
+        <div class="overlay-text">
+            <div class="card-label">Confidence in every frame</div>
+            <div class="card-cat">Portrait</div>
+        </div>
+        <div class="card-badge">View</div>
+    </div>
+
+    <div class="gallery-card tall" data-cat="landscape">
+        <img src="assets/lib/images/my3.jpg" alt="Landscape">
+        <div class="overlay-text">
+            <div class="card-label">high</div>
+            <div class="card-cat">Landscape</div>
+        </div>
+        <div class="card-badge">View</div>
+    </div>
+
+    <div class="gallery-card" data-cat="nature">
+        <img src="assets/lib/images/my4.jpg" alt="Nature">
+        <div class="overlay-text">
+            <div class="card-label">Where love meets the ocean</div>
+            <div class="card-cat">Nature</div>
+        </div>
+        <div class="card-badge">View</div>
+    </div>
+
+    <div class="gallery-card" data-cat="portrait">
+        <img src="assets/lib/images/my5.jpg" alt="Portrait">
+        <div class="overlay-text">
+            <div class="card-label">Shopping time</div>
+            <div class="card-cat">Portrait</div>
+        </div>
+        <div class="card-badge">View</div>
+    </div>
+
+    <div class="gallery-card" data-cat="nature">
+        <img src="assets/lib/images/my6.jpg" alt="Nature">
+        <div class="overlay-text">
+            <div class="card-label">Natural Light</div>
+            <div class="card-cat">Nature</div>
+        </div>
+        <div class="card-badge">View</div>
+    </div>
+
+    <div class="gallery-card wide" data-cat="friends">
+        <img src="assets/lib/images/bestfriend.jpg" alt="Friends">
+        <div class="overlay-text">
+            <div class="card-label">Bestie core in golden light</div>
+            <div class="card-cat">Friends</div>
+        </div>
+        <div class="card-badge">View</div>
+    </div>
+
+    <div class="gallery-card" data-cat="friends">
+        <img src="assets/lib/images/rusini.jpg" alt="Friends">
+        <div class="overlay-text">
+            <div class="card-label">Laughing through everything</div>
+            <div class="card-cat">Friends</div>
+        </div>
+        <div class="card-badge">View</div>
+    </div>
+
+    <div class="gallery-card" data-cat="friends">
+        <img src="assets/lib/images/batchphoto.jpg" alt="Friends">
+        <div class="overlay-text">
+            <div class="card-label">Awrudu Uthsawaya 2025</div>
+            <div class="card-cat">Friends</div>
+        </div>
+        <div class="card-badge">View</div>
+    </div>
+
+</div><!-- end gallery-grid -->
+
+<!-- Lightbox — OUTSIDE the grid -->
+<div id="lightbox">
+    <button id="lightbox-close">&times;</button>
+    <img id="lightbox-img" src="" alt="">
+    <div id="lightbox-caption">
+        <div id="lightbox-label"></div>
+        <div id="lightbox-cat"></div>
+    </div>
+</div>
+
+<script src="assets/js/javascript.js"></script>
 </body>
 </html>

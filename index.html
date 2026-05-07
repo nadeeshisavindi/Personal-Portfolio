@@ -9,11 +9,11 @@
     <link href="https://fonts.googleapis.com/css2?family=Island+Moments&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=DM+Sans:wght@300;400;500;700&family=Playfair+Display:ital,wght@0,700;0,900;1,700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="assets/CSS/style.css">
-
+    <link rel="stylesheet" href="assets/CSS/Education.css">
 
 
 </head>
-<body>
+<body id="top">
 
 
 
@@ -86,6 +86,12 @@
 </div>
 
 
+
+
+
+
+
+
 <!-- about -->
 <section id="about">
 
@@ -128,13 +134,43 @@
 
 
             <div class="stat-card">
+                <a href="Education.html" style="text-decoration:none;">
                 <div class="stat-num">1.5yrs</div>
                 <div class="stat-label">Education</div>
+                </a>
             </div>
 
             <div class="stat-card">
+                <a href="#tech-popup" style="text-decoration:none;">
                 <div class="stat-num">5+</div>
                 <div class="stat-label">Technologies</div>
+                </a>
+            </div>
+
+            <div id="tech-popup" class="popup">
+
+                <div class="popup-content">
+
+                    <a href="#about" class="close-btn">&times;</a>
+
+                    <h2>Technologies</h2>
+
+                    <div class="tech-list">
+                        <p>
+                            I have hands-on experience working with modern web technologies including Java for backend development,
+                            and HTML, CSS, and JavaScript for building responsive user interfaces. I am also familiar with frameworks
+                            and libraries such as Bootstrap and jQuery to create efficient and user-friendly web applications.
+                        </p>
+                        <span>Java</span>
+                        <span>HTML</span>
+                        <span>CSS</span>
+                        <span>JavaScript</span>
+                        <span>Bootstrap</span>
+                        <span>jQuery</span>
+                    </div>
+
+                </div>
+
             </div>
 
         </div>
@@ -143,12 +179,21 @@
         <div id="about-img">
             <img src="assets/lib/images/Gemini_Generated_Image_7i5zre7i5zre7i5z-Photoroom.png" />
         </div>
-        <div id="about-img2">
-            <img src="assets/lib/icons/Gemini_Generated_Image_cktxb6cktxb6cktx-Photoroom.png" />
-        </div>
+
     </div>
 
 </section>
+
+
+
+
+
+
+
+
+
+
+
 
 <section id="works">
     <p id="works-label">My Work..</p>
@@ -208,47 +253,44 @@
 <!--contact-->
 <section id="contact">
 
-<!--   left-->
+    <!--   left-->
     <div id="contact-text">
-
         <p id="contact-label">Get In Touch</p>
         <h2 id="contact-title">Let's work together</h2>
         <p id="contact-desc">Have a project in mind or just want to say hi? Feel free to reach out — I'd love to connect!</p>
-
-
-
     </div>
 
-<!--   right-->
-    <form id="contact-form">
+    <!--   right-->
+    <form id="contact-form" action="mailto:nadeeshisavindi@gmail.com" method="POST" enctype="text/plain">
 
         <div id="form-row">
             <div class="form-group">
                 <label>Name :</label>
-                <input type="text" placeholder="Your name">
+                <input type="text" name="name" placeholder="Your name" required>
             </div>
 
             <div class="form-group">
                 <label>Email :</label>
-                <input type="email" placeholder="Your email">
+                <input type="email" name="email" placeholder="Your email" required>
             </div>
         </div>
 
         <div class="form-group">
             <label>Subject :</label>
-            <input type="text" placeholder="Subject">
+            <input type="text" name="subject" placeholder="Subject" required>
         </div>
 
         <div class="form-group">
             <label>Message :</label>
-            <textarea placeholder="Write your message..."></textarea>
+            <textarea name="message" placeholder="Write your message..." required></textarea>
         </div>
 
-        <button id="btn-send">Send Message</button>
+        <button id="btn-send" type="submit">Send Message</button>
 
     </form>
 
 </section>
+
 
 
 
@@ -266,7 +308,7 @@
 
 
 
-<!-- JS -->
+
 <script src="assets/js/javascript.js"></script>
 
 

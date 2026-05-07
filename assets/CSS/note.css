@@ -1,0 +1,154 @@
+/* NAVBAR */
+/* HERO TITLE */
+#hero-title {
+    font-family: 'Press Start 2P', monospace;
+    font-size: 3rem;
+    margin-left: 50px;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    text-shadow:
+            4px 4px 0 black,
+            7px 7px 0 black;
+    color: white;
+    animation: none; /* remove floating animation */
+}
+
+/* HERO WRAPPER (optional if you used wrap before) */
+#hero-wrap {
+    text-align: center;
+    padding: 40px 0 80px;
+    background: #0d0f12;
+}
+
+/* HERO SECTION */
+#hero {
+    position: relative;
+}
+
+/* BACK BUTTON */
+#hero-back-btn {
+    position: absolute;
+    top: 30px;
+    right: 2rem;
+
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+
+    text-decoration: none;
+    font-size: 13px;
+    font-family: 'DM Sans', sans-serif;
+    color: #9ca3af;
+
+    padding: 8px 14px;
+    border: 1px solid rgba(255,255,255,0.12);
+    border-radius: 10px;
+
+    background: transparent;
+    transition: all 0.25s ease;
+}
+
+/* HOVER */
+#hero-back-btn:hover {
+    color: #fff;
+    border-color: rgba(255,255,255,0.3);
+    background: rgba(255,255,255,0.08);
+}
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 64px;
+
+    display: flex;
+    align-items: center;
+
+    padding: 0 40px;
+
+    background: rgba(0, 0, 0, 0.6);
+    backdrop-filter: blur(10px);
+
+    z-index: 999;
+    box-shadow: 0 4px 30px rgba(0,0,0,0.35);
+}
+
+#logo {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+}
+
+#logo-name {
+    font-family: 'Island Moments', cursive;
+    font-size: 2rem;
+    color: white;
+}
+
+/* BODY LAYOUT */
+body {
+    margin: 0;
+    background: #0f0f0f;
+    font-family: 'DM Sans', sans-serif;
+    padding-top: 90px;
+}
+
+/* CONTAINER */
+.pdf-container {
+    display: grid;
+    grid-template-columns: repeat(2, 320px);
+    column-gap: 10px;
+    row-gap: 20px;
+    justify-content: center;
+    padding: 40px;
+}
+/* CARD */
+.pdf-card {
+    width: 320px;
+    background: rgba(0,0,0,0.85);
+    border: 2px solid hotpink;
+    border-radius: 16px;
+    padding: 25px;
+    text-align: center;
+    color: white;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.4);
+    transition: 0.3s ease;
+}
+
+.pdf-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 35px rgba(244,114,182,0.4);
+}
+
+.pdf-icon {
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+
+.pdf-title {
+    font-size: 1.4rem;
+    margin-bottom: 10px;
+}
+
+.pdf-desc {
+    font-size: 0.9rem;
+    color: #ccc;
+    margin-bottom: 20px;
+    line-height: 1.4;
+}
+
+/* BUTTON */
+.pdf-btn {
+    display: inline-block;
+    padding: 10px 18px;
+    background: hotpink;
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 10px;
+    transition: 0.2s;
+}
+
+.pdf-btn:hover {
+    background: white;
+}
