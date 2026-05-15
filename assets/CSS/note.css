@@ -1,5 +1,4 @@
-/* NAVBAR */
-/* HERO TITLE */
+
 #hero-title {
     font-family: 'Press Start 2P', monospace;
     font-size: 3rem;
@@ -13,19 +12,18 @@
     animation: none; /* remove floating animation */
 }
 
-/* HERO WRAPPER (optional if you used wrap before) */
+
 #hero-wrap {
     text-align: center;
     padding: 40px 0 80px;
     background: #0d0f12;
 }
 
-/* HERO SECTION */
+
 #hero {
     position: relative;
 }
 
-/* BACK BUTTON */
 #hero-back-btn {
     position: absolute;
     top: 30px;
@@ -48,7 +46,7 @@
     transition: all 0.25s ease;
 }
 
-/* HOVER */
+
 #hero-back-btn:hover {
     color: #fff;
     border-color: rgba(255,255,255,0.3);
@@ -85,7 +83,7 @@ nav {
     color: white;
 }
 
-/* BODY LAYOUT */
+
 body {
     margin: 0;
     background: #0f0f0f;
@@ -93,7 +91,7 @@ body {
     padding-top: 90px;
 }
 
-/* CONTAINER */
+
 .pdf-container {
     display: grid;
     grid-template-columns: repeat(2, 320px);
@@ -102,10 +100,15 @@ body {
     justify-content: center;
     padding: 40px;
 }
-/* CARD */
+
+/*card*/
 .pdf-card {
+
+
+
     width: 320px;
     background: rgba(0,0,0,0.85);
+
     border: 2px solid hotpink;
     border-radius: 16px;
     padding: 25px;
@@ -116,7 +119,8 @@ body {
 }
 
 .pdf-card:hover {
-    transform: translateY(-10px);
+    transform: translateY(-8px);
+    border-color: var(--pink);
     box-shadow: 0 15px 35px rgba(244,114,182,0.4);
 }
 
@@ -137,18 +141,22 @@ body {
     line-height: 1.4;
 }
 
-/* BUTTON */
+/* button*/
 .pdf-btn {
     display: inline-block;
-    padding: 10px 18px;
-    background: hotpink;
-    color: black;
+    margin-top: 12px;
     text-decoration: none;
-    font-weight: bold;
+    color: #9ca3af;
+    font-size: 14px;
+    padding: 8px 16px;
+    border: 1px solid rgba(255,255,255,0.12);
     border-radius: 10px;
-    transition: 0.2s;
+    transition: 0.3s;
+    text-align: center;
 }
 
 .pdf-btn:hover {
-    background: white;
+    color: #fff;
+    background: rgba(255,255,255,0.08);
+    border-color: rgba(255,255,255,0.3);
 }

@@ -1,0 +1,226 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --pink: #ffb3d9;
+    --pink-dark: #ff80bf;
+    --pink-soft: rgba(255, 179, 217, 0.12);
+    --white: #ffffff;
+    --dark: #111111;
+    --border: rgba(255, 179, 217, 0.2);
+}
+
+body {
+    font-family: 'DM Sans', sans-serif;
+    background: #0d0f12;
+    color: var(--white);
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    padding: 1.2rem 2rem;
+    border-bottom: 1px solid rgba(255,255,255,0.07);
+    position: sticky;
+    top: 0;
+    background: #0d0f12;
+    z-index: 100;
+}
+
+#logo-name {
+    font-family: 'Island Moments', cursive;
+    font-size: 2rem;
+    color: white;
+}
+
+
+#gallery-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2rem;
+}
+
+#gallery-title {
+    font-family: 'Press Start 2P', monospace;
+    font-size: 2.5rem;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: white;
+    text-shadow: 4px 4px 0 black, 7px 7px 0 black;
+}
+
+#back-btn {
+    text-decoration: none;
+    color: #9ca3af;
+    font-size: 14px;
+    padding: 8px 16px;
+    border: 1px solid rgba(255,255,255,0.12);
+    border-radius: 10px;
+    transition: 0.3s;
+}
+
+#back-btn:hover {
+    color: white;
+    background: rgba(255,255,255,0.08);
+}
+
+
+.projects {
+    padding: 40px 20px;
+}
+
+/* strip */
+.projects-strip {
+    display: flex;
+    gap: 20px;
+    overflow-x: auto;
+    padding: 20px;
+}
+
+.projects-strip::-webkit-scrollbar {
+    display: none;
+}
+
+
+.project-card {
+    width: 500px;
+    height: 350px;
+    background: #141414;
+    border: 1px solid hotpink;
+    border-radius: 20px;
+    padding: 20px;
+    transition: 0.3s;
+}
+
+.project-card:hover {
+    transform: translateY(-8px);
+    border-color: var(--pink);
+    box-shadow: 0 15px 35px rgba(244,114,182,0.4);
+}
+
+
+.project-btn {
+    display: inline-block;
+    margin-top: 12px;
+    text-decoration: none;
+    color: #9ca3af;
+    font-size: 14px;
+    padding: 8px 16px;
+    border: 1px solid rgba(255,255,255,0.12);
+    border-radius: 10px;
+    transition: 0.3s;
+    text-align: center;
+}
+
+.project-btn:hover {
+    color: #fff;
+    background: rgba(255,255,255,0.08);
+    border-color: rgba(255,255,255,0.3);
+}
+
+
+
+.project-img {
+    width: 100%;
+    height: 160px;
+    background: #000;
+    border-radius: 12px;
+    margin-bottom: 15px;
+}
+
+/* text */
+.project-info h3 {
+    font-size: 18px;
+    margin-bottom: 6px;
+}
+
+.project-info p {
+    font-size: 13px;
+    color: #ccc;
+}
+
+
+/*768px */
+@media (max-width: 768px) {
+    #gallery-title {
+        font-size: 1.6rem;
+    }
+
+    .projects-strip {
+        gap: 16px;
+        padding: 10px 2px 16px;
+    }
+
+    .project-card {
+        min-width: 260px;
+        width: 260px;
+    }
+
+    .project-img {
+        height: 130px;
+    }
+}
+
+/* 480px*/
+@media (max-width: 480px) {
+    #gallery-header {
+        padding: 1.2rem;
+    }
+
+    #gallery-title {
+        font-size: 1.1rem;
+        letter-spacing: 0.1em;
+    }
+
+    .projects {
+        padding: 24px 12px 40px;
+    }
+
+    .projects-strip {
+        gap: 14px;
+    }
+
+    .project-card {
+        min-width: 220px;
+        width: 220px;
+        padding: 16px;
+        border-radius: 16px;
+    }
+
+    .project-img {
+        height: 110px;
+    }
+
+    .project-info h3 {
+        font-size: 14px;
+    }
+
+    .project-info p {
+        font-size: 12px;
+    }
+
+    .project-btn {
+        font-size: 12px;
+        padding: 8px 12px;
+    }
+}
+
+/*  360 */
+@media (max-width: 360px) {
+    #gallery-title {
+        font-size: 0.9rem;
+    }
+
+    .project-card {
+        min-width: 190px;
+        width: 190px;
+    }
+
+    .project-img {
+        height: 100px;
+    }
+}
