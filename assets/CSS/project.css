@@ -19,6 +19,9 @@ body {
     color: var(--white);
 }
 
+nav {
+
+}
 
 #logo-name {
     font-family: 'Island Moments', cursive;
