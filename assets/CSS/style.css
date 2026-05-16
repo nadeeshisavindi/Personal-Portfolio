@@ -362,16 +362,16 @@ body {
 
 @keyframes typing1 {
     0%   { width: 0; }                /* hidden */
-    25%  { width: min(750px, 90vw); } /* type වෙනවා */
+    25%  { width: min(750px, 90vw); } /* type wenw */
     45%  { width: min(750px, 90vw); } /* visible — pause */
     48%  { width: 0; }                /* hide */
-    70% { width: 0; }                /* hidden තාම */
+    70% { width: 0; }                /* hidden thama */
 }
 
 @keyframes typing2 {
     0%   { width: 0; }                /* hidden */
-    50%  { width: 0; }                /* line1 ඉවර වෙනකොට wait */
-    70%  { width: min(700px, 90vw); } /* type වෙනවා */
+    50%  { width: 0; }                /* line1 iwarawenakota wait */
+    70%  { width: min(700px, 90vw); } /* type wenwa */
     90%  { width: min(700px, 90vw); } /* visible — pause */
     100% { width: 0; }                /* hide → restart */
 }
