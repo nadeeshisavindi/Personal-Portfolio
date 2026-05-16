@@ -113,7 +113,7 @@ nav {
     border: 1px solid rgba(255,255,255,0.12);
     border-radius: 10px;
     transition: 0.3s;
-
+    text-align: center;
 }
 
 .project-btn:hover {
