@@ -1,0 +1,15 @@
+/* Shared by assignment preview pages */
+.preview-back {
+    position: fixed;
+    top: 12px; left: 12px;
+    z-index: 3000;
+    padding: 8px 16px;
+    border-radius: 999px;
+    background: rgba(17, 17, 17, .88);
+    color: #fff;
+    border: 1.5px solid #f472b6;
+    font: 600 14px/1.2 'DM Sans', system-ui, sans-serif;
+    text-decoration: none;
+    transition: background .2s, color .2s;
+}
+.preview-back:hover, .preview-back:focus-visible { background: #f472b6; color: #111; outline-offset: 3px; }

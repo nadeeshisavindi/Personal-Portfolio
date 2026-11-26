@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Assignment 4 | Nadeeshi</title>
+    <meta name="description" content="A pure CSS animation of a car driving through a city">
+    <meta name="author" content="Nadeeshi Savindi">
+    <link rel="icon" href="../assets/images/favicon.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="../assets/css/normalize.css">
+    <link rel="stylesheet" href="../assets/css/preview.css">
+    <style>
+        *, *::before, *::after { box-sizing: border-box; }
+        body { margin: 0; overflow: hidden; }
+
+        .scene {
+            width: 100%; height: 100vh;
+            position: relative; overflow: hidden;
+            background: #9fd3ff url("../assets/images/car/sky.jpg") center / cover;
+        }
+        .city, .road {
+            position: absolute; width: 500%;
+            background-repeat: repeat-x;
+            background-size: auto 100%;
+        }
+        .city { height: 250px; bottom: 200px; background-image: url("../assets/images/car/city.webp"); animation: slide 10s linear infinite; }
+        .road { height: 200px; bottom: 0;     background-image: url("../assets/images/car/road.jpg");  animation: slide 5s linear infinite; }
+
+        /* car + wheels live in one box so they stay aligned at any screen width */
+        .car {
+            position: absolute;
+            bottom: 90px;
+            left: calc(50% - min(200px, 40vw));
+            width: min(400px, 80vw);
+            z-index: 10;
+        }
+        .car-body { width: 100%; }
+        .wheel {
+            position: absolute;
+            bottom: .5%;
+            width: 18.75%;
+            animation: spin 1s linear infinite;
+        }
+        .wheel.back  { left: 8.75%; }
+        .wheel.front { left: 69.5%; }
+
+        @keyframes slide { to { transform: translateX(-2000px); } }
+        @keyframes spin  { to { transform: rotate(360deg); } }
+        @media (prefers-reduced-motion: reduce) { .city, .road, .wheel { animation: none; } }
+    </style>
+</head>
+<body>
+    <a class="preview-back" href="../assignments.html">← Back</a>
+    <div class="scene" role="img" aria-label="A car driving along a road past a city skyline">
+        <div class="city"></div>
+        <div class="road"></div>
+        <div class="car">
+            <img class="car-body" src="../assets/images/car/car.webp" alt="">
+            <img class="wheel back" src="../assets/images/car/wheel.webp" alt="">
+            <img class="wheel front" src="../assets/images/car/wheel.webp" alt="">
+        </div>
+    </div>
+</body>
+</html>

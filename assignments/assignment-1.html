@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Assignment 1 | Nadeeshi</title>
+    <meta name="description" content="Four-quadrant colour layout built with CSS circles">
+    <meta name="author" content="Nadeeshi Savindi">
+    <link rel="icon" href="../assets/images/favicon.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="../assets/css/normalize.css">
+    <link rel="stylesheet" href="../assets/css/preview.css">
+    <style>
+        *, *::before, *::after { box-sizing: content-box; }
+        body { margin: 0; padding: 0; width: 100%; height: 100vh; overflow: hidden; }
+        main { width: 100%; height: 100%; position: relative; }
+
+        section { width: 50%; height: 50%; position: absolute; overflow: hidden; }
+        #red    { background: red;      top: 0;    left: 0; }
+        #green  { background: green;    top: 0;    right: 0; }
+        #orange { background: orange;   bottom: 0; left: 0; }
+        #pink   { background: deeppink; bottom: 0; right: 0; }
+
+        /* white disc in the middle of every quadrant */
+        .disc {
+            width: 16vw; aspect-ratio: 1 / 1;
+            position: absolute; inset: 0; margin: auto;
+            background: #fff; border-radius: 50%;
+        }
+        .dot { width: 6vw; aspect-ratio: 1 / 1; background: red; position: absolute; inset: 0; margin: auto; }
+
+        /* white rings that cut a notch from the outer corner */
+        .ring { background: #fff; position: absolute; width: 16vw; aspect-ratio: 1 / 1; border-radius: 50%; }
+        #border1 { top: -8vw;    left: -8vw; }
+        #border2 { top: -8vw;    right: -8vw; }
+        #border3 { bottom: -8vw; left: -8vw; }
+        #border4 { bottom: -8vw; right: -8vw; }
+
+        .hole { background: #fff; position: absolute; width: 14vw; aspect-ratio: 1 / 1; border-radius: 50%; }
+        #center1 { top: -10vw;    right: -7vw; }
+        #center2 { top: -10vw;    left: -7vw; }
+        #center3 { bottom: -10vw; right: -7vw; }
+        #center4 { bottom: -10vw; left: -7vw; }
+
+        #center-box { width: 15vw; aspect-ratio: 1 / 1; background: #fff; position: absolute; inset: 0; margin: auto; }
+        #circle { background: red; width: 50%; aspect-ratio: 1 / 1; border-radius: 50%; position: absolute; top: 0; left: 0; }
+    </style>
+</head>
+<body>
+    <a class="preview-back" href="../assignments.html">← Back</a>
+    <main aria-label="Four-quadrant circle pattern">
+        <section id="red"><div class="ring" id="border1"></div><div class="hole" id="center1"></div><div class="disc"><div class="dot"></div></div></section>
+        <section id="green"><div class="ring" id="border2"></div><div class="hole" id="center2"></div><div class="disc"><div class="dot"></div></div></section>
+        <section id="orange"><div class="ring" id="border3"></div><div class="hole" id="center3"></div><div class="disc"><div class="dot"></div></div></section>
+        <section id="pink"><div class="ring" id="border4"></div><div class="hole" id="center4"></div><div class="disc"><div class="dot"></div></div></section>
+    </main>
+    <div id="center-box"><div id="circle"></div></div>
+</body>
+</html>

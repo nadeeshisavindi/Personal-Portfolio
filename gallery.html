@@ -2,147 +2,114 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gallery</title>
-    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=DM+Sans:wght@300;400;500;700&family=Playfair+Display:ital,wght@0,700;0,900;1,700&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Island+Moments&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="assets/CSS/gallery.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Gallery | Nadeeshi</title>
+    <meta name="description" content="Photo gallery: friends, portraits, landscapes and nature.">
+    <meta name="author" content="Nadeeshi Savindi">
+    <meta name="theme-color" content="#111111">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Gallery | Nadeeshi">
+    <meta property="og:description" content="Photo gallery: friends, portraits, landscapes and nature.">
+    <meta name="twitter:card" content="summary">
+    <link rel="icon" href="assets/images/favicon.svg" type="image/svg+xml">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Island+Moments&family=Playfair+Display:wght@700&family=Press+Start+2P&display=swap">
+    <link rel="stylesheet" href="assets/css/base.css">
+    <link rel="stylesheet" href="assets/css/pages.css">
 </head>
-
 <body>
-
-
-<nav>
-    <a href="index.html" id="logo">
-        <span id="logo-name">Rannul</span>
-    </a>
-</nav>
-
-
-<div id="gallery-header">
-    <h2 id="gallery-title">My Gallery</h2>
-    <a href="index.html#about" id="back-btn">
-        <span class="arrow">←</span>
-        <span>Back</span>
-    </a>
-</div>
-
-
-
-
-
-
-<div id="filter-bar">
-    <button class="filter-btn active" data-cat="all">All</button>
-    <button class="filter-btn" data-cat="friends">Friends</button>
-    <button class="filter-btn" data-cat="portrait">Portrait</button>
-    <button class="filter-btn" data-cat="landscape">Landscape</button>
-    <button class="filter-btn" data-cat="nature">Nature</button>
-</div>
-
-
-
-
-
-
-<div id="gallery-grid">
-
-    <div class="gallery-card wide" data-cat="friends">
-        <img src="assets/lib/images/friends.jpg" alt="Friends">
-        <div class="overlay-text">
-            <div class="card-label">First milestone completed</div>
-            <div class="card-cat">Friends</div>
-        </div>
-        <div class="card-badge">View</div>
+<a class="skip-link" href="#main">Skip to content</a>
+<div class="scroll-progress" aria-hidden="true"></div>
+<header class="site-nav">
+    <a href="index.html" class="logo" aria-label="Rannul — home">Rannul</a>
+    <nav aria-label="Main">
+        <ul class="nav-list" id="nav-list">
+            <li><a href="index.html#hero">Home</a></li>
+            <li><a href="index.html#about" aria-current="page">About</a></li>
+            <li><a href="index.html#works">Work</a></li>
+            <li><a href="index.html#contact">Contact</a></li>
+        </ul>
+    </nav>
+    <div class="nav-icons">
+        <a href="https://github.com/nadeeshisavindi" target="_blank" rel="noopener noreferrer" aria-label="GitHub profile"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 .3a12 12 0 0 0-3.8 23.4c.6.1.8-.3.8-.6v-2c-3.3.7-4-1.6-4-1.6-.5-1.4-1.3-1.8-1.3-1.8-1-.7.1-.7.1-.7 1.2.1 1.8 1.2 1.8 1.2 1 1.8 2.8 1.3 3.5 1 .1-.8.4-1.3.7-1.6-2.7-.3-5.5-1.3-5.5-5.9 0-1.3.5-2.4 1.2-3.2 0-.4-.5-1.6.2-3.2 0 0 1-.3 3.3 1.2a11.5 11.5 0 0 1 6 0c2.3-1.5 3.3-1.2 3.3-1.2.7 1.6.2 2.8.1 3.2.8.8 1.2 1.9 1.2 3.2 0 4.6-2.8 5.6-5.5 5.9.4.4.8 1.1.8 2.2v3.3c0 .3.2.7.8.6A12 12 0 0 0 12 .3z"/></svg></a>
+        <a href="https://www.linkedin.com/in/nadeeshi-savindi-a14b833a8/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn profile"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20.45 20.45h-3.55v-5.57c0-1.33-.03-3.04-1.85-3.04-1.86 0-2.14 1.45-2.14 2.95v5.66H9.36V9h3.41v1.56h.05c.47-.9 1.63-1.85 3.36-1.85 3.59 0 4.26 2.36 4.26 5.43v6.31zM5.34 7.43a2.06 2.06 0 1 1 0-4.12 2.06 2.06 0 0 1 0 4.12zm1.78 13.02H3.56V9h3.56v11.45zM22.23 0H1.77C.79 0 0 .77 0 1.72v20.56C0 23.23.79 24 1.77 24h20.46C23.2 24 24 23.23 24 22.28V1.72C24 .77 23.2 0 22.23 0z"/></svg></a>
+        <a href="mailto:nadeeshisavindi@gmail.com" aria-label="Send an email"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M2 5.5A1.5 1.5 0 0 1 3.5 4h17A1.5 1.5 0 0 1 22 5.5v13a1.5 1.5 0 0 1-1.5 1.5h-17A1.5 1.5 0 0 1 2 18.5v-13zm2.4.5L12 11.6 19.6 6H4.4zM20 7.9l-7.4 5.4a1 1 0 0 1-1.2 0L4 7.9V18h16V7.9z"/></svg></a>
     </div>
-
-    <div class="gallery-card" data-cat="portrait">
-        <img src="assets/lib/images/my2.jpg" alt="Portrait">
-        <div class="overlay-text">
-            <div class="card-label">Confidence in every frame</div>
-            <div class="card-cat">Portrait</div>
-        </div>
-        <div class="card-badge">View</div>
+    <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="nav-list" aria-label="Open menu"><span></span><span></span><span></span></button>
+</header>
+<main id="main" class="inner">
+    <div class="page-hero">
+        <div><h1 class="page-title">My Gallery</h1></div>
+        <a class="btn back-btn" href="index.html#about"><span aria-hidden="true">←</span> Back</a>
     </div>
-
-    <div class="gallery-card tall" data-cat="landscape">
-        <img src="assets/lib/images/my3.jpg" alt="Landscape">
-        <div class="overlay-text">
-            <div class="card-label">high</div>
-            <div class="card-cat">Landscape</div>
-        </div>
-        <div class="card-badge">View</div>
+    <div class="filter-bar" role="group" aria-label="Filter photos by category">
+        <button class="filter-btn" type="button" data-cat="all" aria-pressed="true">All</button>
+        <button class="filter-btn" type="button" data-cat="friends" aria-pressed="false">Friends</button>
+        <button class="filter-btn" type="button" data-cat="portrait" aria-pressed="false">Portrait</button>
+        <button class="filter-btn" type="button" data-cat="landscape" aria-pressed="false">Landscape</button>
+        <button class="filter-btn" type="button" data-cat="nature" aria-pressed="false">Nature</button>
     </div>
-
-    <div class="gallery-card" data-cat="nature">
-        <img src="assets/lib/images/my4.jpg" alt="Nature">
-        <div class="overlay-text">
-            <div class="card-label">Where love meets the ocean</div>
-            <div class="card-cat">Nature</div>
-        </div>
-        <div class="card-badge">View</div>
+    <div class="gallery-grid">
+        <button type="button" class="gallery-card wide" data-cat="friends" aria-label="View photo: First milestone completed">
+            <img src="assets/images/gallery-friends.webp" width="960" height="1280" loading="lazy" decoding="async" alt="Nadeeshi with friends celebrating a first milestone">
+            <span class="overlay"><span class="card-label">First milestone completed</span><span class="card-cat">Friends</span></span>
+        </button>
+        <button type="button" class="gallery-card " data-cat="portrait" aria-label="View photo: Confidence in every frame">
+            <img src="assets/images/gallery-portrait-1.webp" width="704" height="963" loading="lazy" decoding="async" alt="Portrait of Nadeeshi looking confident">
+            <span class="overlay"><span class="card-label">Confidence in every frame</span><span class="card-cat">Portrait</span></span>
+        </button>
+        <button type="button" class="gallery-card tall" data-cat="landscape" aria-label="View photo: High">
+            <img src="assets/images/gallery-landscape.webp" width="960" height="1280" loading="lazy" decoding="async" alt="View from high up">
+            <span class="overlay"><span class="card-label">High</span><span class="card-cat">Landscape</span></span>
+        </button>
+        <button type="button" class="gallery-card " data-cat="nature" aria-label="View photo: Where love meets the ocean">
+            <img src="assets/images/gallery-nature-1.webp" width="960" height="1280" loading="lazy" decoding="async" alt="Seaside scene by the ocean">
+            <span class="overlay"><span class="card-label">Where love meets the ocean</span><span class="card-cat">Nature</span></span>
+        </button>
+        <button type="button" class="gallery-card " data-cat="portrait" aria-label="View photo: Shopping time">
+            <img src="assets/images/gallery-portrait-2.webp" width="839" height="1040" loading="lazy" decoding="async" alt="Nadeeshi out shopping">
+            <span class="overlay"><span class="card-label">Shopping time</span><span class="card-cat">Portrait</span></span>
+        </button>
+        <button type="button" class="gallery-card " data-cat="nature" aria-label="View photo: Natural light">
+            <img src="assets/images/gallery-nature-2.webp" width="960" height="1280" loading="lazy" decoding="async" alt="Portrait in soft natural light">
+            <span class="overlay"><span class="card-label">Natural light</span><span class="card-cat">Nature</span></span>
+        </button>
+        <button type="button" class="gallery-card wide" data-cat="friends" aria-label="View photo: Bestie core in golden light">
+            <img src="assets/images/gallery-bestie.webp" width="1000" height="752" loading="lazy" decoding="async" alt="Nadeeshi and her best friend in golden light">
+            <span class="overlay"><span class="card-label">Bestie core in golden light</span><span class="card-cat">Friends</span></span>
+        </button>
+        <button type="button" class="gallery-card " data-cat="friends" aria-label="View photo: Laughing through everything">
+            <img src="assets/images/gallery-laughing.webp" width="960" height="1280" loading="lazy" decoding="async" alt="Friends laughing together">
+            <span class="overlay"><span class="card-label">Laughing through everything</span><span class="card-cat">Friends</span></span>
+        </button>
+        <button type="button" class="gallery-card " data-cat="friends" aria-label="View photo: Awrudu Uthsawaya 2025">
+            <img src="assets/images/gallery-batch.webp" width="1000" height="667" loading="lazy" decoding="async" alt="Batch photo at the Awrudu Uthsawaya 2025 celebration">
+            <span class="overlay"><span class="card-label">Awrudu Uthsawaya 2025</span><span class="card-cat">Friends</span></span>
+        </button>
     </div>
-
-    <div class="gallery-card" data-cat="portrait">
-        <img src="assets/lib/images/my5.jpg" alt="Portrait">
-        <div class="overlay-text">
-            <div class="card-label">Shopping time</div>
-            <div class="card-cat">Portrait</div>
-        </div>
-        <div class="card-badge">View</div>
-    </div>
-
-    <div class="gallery-card" data-cat="nature">
-        <img src="assets/lib/images/my6.jpg" alt="Nature">
-        <div class="overlay-text">
-            <div class="card-label">Natural Light</div>
-            <div class="card-cat">Nature</div>
-        </div>
-        <div class="card-badge">View</div>
-    </div>
-
-    <div class="gallery-card wide" data-cat="friends">
-        <img src="assets/lib/images/bestfriend.jpg" alt="Friends">
-        <div class="overlay-text">
-            <div class="card-label">Bestie core in golden light</div>
-            <div class="card-cat">Friends</div>
-        </div>
-        <div class="card-badge">View</div>
-    </div>
-
-    <div class="gallery-card" data-cat="friends">
-        <img src="assets/lib/images/rusini.jpg" alt="Friends">
-        <div class="overlay-text">
-            <div class="card-label">Laughing through everything</div>
-            <div class="card-cat">Friends</div>
-        </div>
-        <div class="card-badge">View</div>
-    </div>
-
-    <div class="gallery-card" data-cat="friends">
-        <img src="assets/lib/images/batchphoto.jpg" alt="Friends">
-        <div class="overlay-text">
-            <div class="card-label">Awrudu Uthsawaya 2025</div>
-            <div class="card-cat">Friends</div>
-        </div>
-        <div class="card-badge">View</div>
-    </div>
-
-</div>
-
-
-
-
-<div id="lightbox">
-    <button id="lightbox-close">&times;</button>
-    <img id="lightbox-img" src="" alt="">
-    <div id="lightbox-caption">
-        <div id="lightbox-label"></div>
-        <div id="lightbox-cat"></div>
-    </div>
-</div>
-
-<script src="assets/js/javascript.js"></script>
+    <p class="gallery-empty" id="gallery-empty" hidden>No photos in this category yet.</p>
+    <dialog class="lightbox" id="lightbox" aria-label="Photo viewer">
+        <button class="lb-btn lb-close" type="button" aria-label="Close">&times;</button>
+        <button class="lb-btn lb-prev" type="button" aria-label="Previous photo">‹</button>
+        <button class="lb-btn lb-next" type="button" aria-label="Next photo">›</button>
+        <figure>
+            <img id="lb-img" src="" alt="">
+            <figcaption><div class="card-label" id="lb-label"></div><div class="card-cat" id="lb-cat"></div></figcaption>
+        </figure>
+    </dialog>
+</main>
+<footer class="site-footer">
+    <a class="footer-logo" href="index.html" aria-label="Rannul — home">Rannul</a>
+    <ul class="footer-links">
+        <li><a href="index.html#hero">Home</a></li>
+        <li><a href="index.html#about">About</a></li>
+        <li><a href="index.html#works">Work</a></li>
+        <li><a href="index.html#contact">Contact</a></li>
+    </ul>
+    <small class="footer-copy">&copy; <span id="year">2026</span> Nadeeshi Savindi. All rights reserved.</small>
+</footer>
+<script src="assets/js/main.js"></script>
+<script src="assets/js/gallery.js"></script>
 </body>
 </html>

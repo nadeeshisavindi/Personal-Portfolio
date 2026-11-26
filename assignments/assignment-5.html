@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Assignment 5 | Nadeeshi</title>
+    <meta name="description" content="A playable CSS piano — click the keys or use your keyboard">
+    <meta name="author" content="Nadeeshi Savindi">
+    <link rel="icon" href="../assets/images/favicon.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="../assets/css/normalize.css">
+    <link rel="stylesheet" href="../assets/css/preview.css">
+    <style>
+        *, *::before, *::after { box-sizing: border-box; }
+        body { min-height: 100vh; display: grid; place-items: center; background: #222; padding: 64px 12px 24px; }
+        .scroll { max-width: 100%; overflow-x: auto; }
+        .main-piano { background: whitesmoke; display: flex; position: relative; padding: 20px; width: fit-content; border-radius: 10px; }
+        .key { font: inherit; cursor: pointer; transition: background .15s, transform .1s; }
+        .white {
+            background: #fff; border: 1px solid #000;
+            width: 70px; height: 300px;
+            border-radius: 0 0 5px 5px;
+            display: flex; align-items: flex-end; justify-content: center; padding-bottom: 10px;
+            font-size: 12px; color: #666;
+        }
+        .black {
+            position: absolute; top: 20px;
+            left: calc(var(--k) * 70px + 20px - 30px);
+            width: 60px; height: 200px; z-index: 2;
+            background: #000; border: 1px solid #000; border-radius: 0 0 3px 3px;
+            color: #aaa; font-size: 11px; display: flex; align-items: flex-end; justify-content: center; padding-bottom: 8px;
+        }
+        .white:hover { background: lightslategray; }
+        .white.active { background: #f9a8d4; transform: translateY(2px); }
+        .black:hover, .black.active { background: #444; }
+        .hint { color: #bbb; font: 14px/1.4 'DM Sans', system-ui, sans-serif; text-align: center; margin-bottom: 16px; }
+    </style>
+</head>
+<body>
+    <a class="preview-back" href="../assignments.html">← Back</a>
+    <main>
+        <p class="hint">Click the keys or play with your keyboard: <b>A S D F G H J K L ;</b> (white) · <b>W E T Y U O P</b> (black)</p>
+        <div class="scroll">
+            <div class="main-piano" id="piano" role="group" aria-label="Piano keyboard"></div>
+        </div>
+    </main>
+    <script>
+        // 10 white keys (C D E F G A B C D E) and 7 black keys placed on the gaps between them
+        const WHITE = [['C4',261.63,'a'],['D4',293.66,'s'],['E4',329.63,'d'],['F4',349.23,'f'],['G4',392.0,'g'],
+                       ['A4',440.0,'h'],['B4',493.88,'j'],['C5',523.25,'k'],['D5',587.33,'l'],['E5',659.25,';']];
+        const BLACK = [[1,'C#4',277.18,'w'],[2,'D#4',311.13,'e'],[4,'F#4',369.99,'t'],[5,'G#4',415.3,'y'],
+                       [6,'A#4',466.16,'u'],[8,'C#5',554.37,'o'],[9,'D#5',622.25,'p']];
+        const piano = document.getElementById('piano');
+        let ctx;
+        function play(freq) {
+            ctx = ctx || new (window.AudioContext || window.webkitAudioContext)();
+            const o = ctx.createOscillator(), g = ctx.createGain();
+            o.type = 'triangle'; o.frequency.value = freq;
+            g.gain.setValueAtTime(.35, ctx.currentTime);
+            g.gain.exponentialRampToValueAtTime(.001, ctx.currentTime + 1.2);
+            o.connect(g).connect(ctx.destination); o.start(); o.stop(ctx.currentTime + 1.2);
+        }
+        const byKey = {};
+        function make(cls, label, freq, kbd, k) {
+            const b = document.createElement('button');
+            b.type = 'button'; b.className = 'key ' + cls; b.textContent = kbd.toUpperCase();
+            b.setAttribute('aria-label', 'Note ' + label);
+            if (k !== undefined) b.style.setProperty('--k', k);
+            const hit = () => { play(freq); b.classList.add('active'); setTimeout(() => b.classList.remove('active'), 160); };
+            b.addEventListener('click', hit);
+            byKey[kbd] = hit;
+            return b;
+        }
+        WHITE.forEach(([n, f, k]) => piano.appendChild(make('white', n, f, k)));
+        BLACK.forEach(([pos, n, f, k]) => piano.appendChild(make('black', n, f, k, pos)));
+        document.addEventListener('keydown', e => { if (!e.repeat && !e.ctrlKey && !e.metaKey && byKey[e.key.toLowerCase()]) byKey[e.key.toLowerCase()](); });
+    </script>
+</body>
+</html>

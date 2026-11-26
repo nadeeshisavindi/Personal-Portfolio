@@ -2,322 +2,189 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="author" content="Nadeeshi">
-    <title>Nadeeshi Portfolio</title>
-
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Island+Moments&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=DM+Sans:wght@300;400;500;700&family=Playfair+Display:ital,wght@0,700;0,900;1,700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="assets/CSS/style.css">
-    <link rel="stylesheet" href="assets/CSS/Education.css">
-
-
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Nadeeshi | Software Engineering Student Portfolio</title>
+    <meta name="description" content="Portfolio of Nadeeshi, a software engineering student building web and desktop applications with Java, HTML, CSS and JavaScript.">
+    <meta name="author" content="Nadeeshi Savindi">
+    <meta name="theme-color" content="#111111">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Nadeeshi | Software Engineering Student Portfolio">
+    <meta property="og:description" content="Portfolio of Nadeeshi, a software engineering student building web and desktop applications with Java, HTML, CSS and JavaScript.">
+    <meta name="twitter:card" content="summary">
+    <link rel="icon" href="assets/images/favicon.svg" type="image/svg+xml">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Island+Moments&family=Playfair+Display:wght@700&family=Press+Start+2P&display=swap">
+    <link rel="stylesheet" href="assets/css/base.css">
+    <link rel="stylesheet" href="assets/css/home.css">
+    <script type="application/ld+json">
+    {"@context":"https://schema.org","@type":"Person","name":"Nadeeshi Savindi","jobTitle":"Software Engineering Student","email":"mailto:nadeeshisavindi@gmail.com","sameAs":["https://github.com/nadeeshisavindi","https://www.linkedin.com/in/nadeeshi-savindi-a14b833a8/"]}
+    </script>
 </head>
-<body id="top">
-
-
-
-
-<!-- navbar -->
-<nav>
-    <a href="#hero" id="logo">
-
-        <span id="logo-name">Rannul</span>
-    </a>
-    <ul id="nav-list">
-        <li><a href="#hero">Home</a></li>
-        <li><a href="#works">Work</a></li>
-        <li><a href="#about">About me</a></li>
-        <li><a href="#contact">Contact</a></li>
-   </ul>
-
-
-    <div id="hamburger">
-        <span></span>
-        <span></span>
-        <span></span>
+<body class="home">
+<a class="skip-link" href="#main">Skip to content</a>
+<div class="scroll-progress" aria-hidden="true"></div>
+<header class="site-nav">
+    <a href="#hero" class="logo" aria-label="Rannul — home">Rannul</a>
+    <nav aria-label="Main">
+        <ul class="nav-list" id="nav-list">
+            <li><a href="#hero" data-spy="hero">Home</a></li>
+            <li><a href="#about" data-spy="about">About</a></li>
+            <li><a href="#works" data-spy="works">Work</a></li>
+            <li><a href="#contact" data-spy="contact">Contact</a></li>
+        </ul>
+    </nav>
+    <div class="nav-icons">
+        <a href="https://github.com/nadeeshisavindi" target="_blank" rel="noopener noreferrer" aria-label="GitHub profile"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 .3a12 12 0 0 0-3.8 23.4c.6.1.8-.3.8-.6v-2c-3.3.7-4-1.6-4-1.6-.5-1.4-1.3-1.8-1.3-1.8-1-.7.1-.7.1-.7 1.2.1 1.8 1.2 1.8 1.2 1 1.8 2.8 1.3 3.5 1 .1-.8.4-1.3.7-1.6-2.7-.3-5.5-1.3-5.5-5.9 0-1.3.5-2.4 1.2-3.2 0-.4-.5-1.6.2-3.2 0 0 1-.3 3.3 1.2a11.5 11.5 0 0 1 6 0c2.3-1.5 3.3-1.2 3.3-1.2.7 1.6.2 2.8.1 3.2.8.8 1.2 1.9 1.2 3.2 0 4.6-2.8 5.6-5.5 5.9.4.4.8 1.1.8 2.2v3.3c0 .3.2.7.8.6A12 12 0 0 0 12 .3z"/></svg></a>
+        <a href="https://www.linkedin.com/in/nadeeshi-savindi-a14b833a8/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn profile"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20.45 20.45h-3.55v-5.57c0-1.33-.03-3.04-1.85-3.04-1.86 0-2.14 1.45-2.14 2.95v5.66H9.36V9h3.41v1.56h.05c.47-.9 1.63-1.85 3.36-1.85 3.59 0 4.26 2.36 4.26 5.43v6.31zM5.34 7.43a2.06 2.06 0 1 1 0-4.12 2.06 2.06 0 0 1 0 4.12zm1.78 13.02H3.56V9h3.56v11.45zM22.23 0H1.77C.79 0 0 .77 0 1.72v20.56C0 23.23.79 24 1.77 24h20.46C23.2 24 24 23.23 24 22.28V1.72C24 .77 23.2 0 22.23 0z"/></svg></a>
+        <a href="mailto:nadeeshisavindi@gmail.com" aria-label="Send an email"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M2 5.5A1.5 1.5 0 0 1 3.5 4h17A1.5 1.5 0 0 1 22 5.5v13a1.5 1.5 0 0 1-1.5 1.5h-17A1.5 1.5 0 0 1 2 18.5v-13zm2.4.5L12 11.6 19.6 6H4.4zM20 7.9l-7.4 5.4a1 1 0 0 1-1.2 0L4 7.9V18h16V7.9z"/></svg></a>
     </div>
+    <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="nav-list" aria-label="Open menu"><span></span><span></span><span></span></button>
+</header>
+<main id="main">
 
-    <div id="nav-icons">
-        <a href="https://github.com/nadeeshisavindi" aria-label="GitHub">
-            <svg viewBox="0 0 24 24"><path d="M12 .3a12 12 0 0 0-3.8 23.4c.6.1.8-.3.8-.6v-2c-3.3.7-4-1.6-4-1.6-.5-1.4-1.3-1.8-1.3-1.8-1-.7.1-.7.1-.7 1.2.1 1.8 1.2 1.8 1.2 1 1.8 2.8 1.3 3.5 1 .1-.8.4-1.3.7-1.6-2.7-.3-5.5-1.3-5.5-5.9 0-1.3.5-2.4 1.2-3.2 0-.4-.5-1.6.2-3.2 0 0 1-.3 3.3 1.2a11.5 11.5 0 0 1 6 0c2.3-1.5 3.3-1.2 3.3-1.2.7 1.6.2 2.8.1 3.2.8.8 1.2 1.9 1.2 3.2 0 4.6-2.8 5.6-5.5 5.9.4.4.8 1.1.8 2.2v3.3c0 .3.2.7.8.6A12 12 0 0 0 12 .3z"/></svg>
-        </a>
-        <a href="https://www.linkedin.com/in/nadeeshi-savindi-a14b833a8/" aria-label="LinkedIn">
-            <svg viewBox="0 0 24 24"><path d="M20.45 20.45h-3.55v-5.57c0-1.33-.03-3.04-1.85-3.04-1.86 0-2.14 1.45-2.14 2.95v5.66H9.36V9h3.41v1.56h.05c.47-.9 1.63-1.85 3.36-1.85 3.59 0 4.26 2.36 4.26 5.43v6.31zM5.34 7.43a2.06 2.06 0 1 1 0-4.12 2.06 2.06 0 0 1 0 4.12zm1.78 13.02H3.56V9h3.56v11.45zM22.23 0H1.77C.79 0 0 .77 0 1.72v20.56C0 23.23.79 24 1.77 24h20.46C23.2 24 24 23.23 24 22.28V1.72C24 .77 23.2 0 22.23 0z"/></svg>
-        </a>
+<section class="hero" id="hero" aria-labelledby="hero-title">
+    <div class="sparkles" aria-hidden="true">
+        <i style="--x:6%;--y:22%;--c:#f472b6;--dl:0.0s;--s:14px"></i>
+        <i style="--x:92%;--y:18%;--c:#ec4899;--dl:0.5s;--s:20px"></i>
+        <i style="--x:15%;--y:60%;--c:#be185d;--dl:1.0s;--s:26px"></i>
+        <i style="--x:85%;--y:55%;--c:#f472b6;--dl:1.5s;--s:14px"></i>
+        <i style="--x:50%;--y:12%;--c:#be185d;--dl:2.0s;--s:20px"></i>
+        <i style="--x:30%;--y:30%;--c:#ec4899;--dl:0.0s;--s:26px"></i>
+        <i style="--x:70%;--y:35%;--c:#f472b6;--dl:0.5s;--s:14px"></i>
     </div>
-</nav>
-
-
-
-
-
-
-
-
-
-
-<!-- hero-->
-<section id="hero">
-    <div class="stars"></div>
-
-    <div id="hero-big-name">NADEESHI</div>
-    <div id="hero-image">
-
-
-
-        <img src="assets/lib/images/Gemini_Generated_Image_.png"  alt="Nadeeshi illustration" />
+    <h1 class="hero-name" id="hero-title">NADEESHI</h1>
+    <div class="hero-image">
+        <img src="assets/images/hero.webp" width="1280" height="586" fetchpriority="high"
+             alt="Four illustrated portraits of Nadeeshi in different outfits">
     </div>
-
 </section>
 
-
-
-
-
-
-<!-- bio -->
-<div id="bio-banner">
-    <p class="bio-line line1">
-        <span>Student Software Developer</span> | Building modern
-    </p>
-
-    <p class="bio-line line2">
-        <span>Web & Desktop Applications</span> from scratch....
-    </p>
+<div class="bio-banner">
+    <p><span class="type-wrap"><span class="hl" data-typewriter="Student Software Developer|Java Enthusiast|Front-end Builder|Problem Solver">Student Software Developer</span></span>
+        building modern web &amp; desktop applications from scratch.</p>
 </div>
 
-
-
-
-
-
-
-
-<!-- about -->
-<section id="about">
-
-
-    <svg class="mini-star" style="top:10%; left:83%"  viewBox="0 0 30 30"><polygon points="15,0 18,11 30,15 18,19 15,30 12,19 0,15 12,11" fill="#f472b6"/></svg>
-    <svg class="mini-star" style="top:28%; left:96%"  viewBox="0 0 30 30"><polygon points="15,0 18,11 30,15 18,19 15,30 12,19 0,15 12,11" fill="#be185d"/></svg>
-    <svg class="mini-star" style="top:10%; left:8%"  viewBox="0 0 30 30"><polygon points="15,0 18,11 30,15 18,19 15,30 12,19 0,15 12,11" fill="#ec4899"/></svg>
-    <svg class="mini-star" style="top:18%; left:20%"  viewBox="0 0 30 30"><polygon points="15,0 18,11 30,15 18,19 15,30 12,19 0,15 12,11" fill="#f472b6"/></svg>
-    <svg class="mini-star" style="top:8%;  left:38%"  viewBox="0 0 30 30"><polygon points="15,0 18,11 30,15 18,19 15,30 12,19 0,15 12,11" fill="#be185d"/></svg>
-    <svg class="mini-star" style="top:6%;  left:72%"  viewBox="0 0 30 30"><polygon points="15,0 18,11 30,15 18,19 15,30 12,19 0,15 12,11" fill="#f472b6"/></svg>
-    <svg class="mini-star" style="top:20%; left:90%"  viewBox="0 0 30 30"><polygon points="15,0 18,11 30,15 18,19 15,30 12,19 0,15 12,11" fill="#be185d"/></svg>
-    <svg class="mini-star" style="top:35%; left:5%"  viewBox="0 0 30 30"><polygon points="15,0 18,11 30,15 18,19 15,30 12,19 0,15 12,11" fill="#f472b6"/></svg>
-    <svg class="mini-star" style="top:40%; left:92%"  viewBox="0 0 30 30"><polygon points="15,0 18,11 30,15 18,19 15,30 12,19 0,15 12,11" fill="#ec4899"/></svg>
-    <svg class="mini-star" style="top:80%; left:100%"  viewBox="0 0 30 30"><polygon points="15,0 18,11 30,15 18,19 15,30 12,19 0,15 12,11" fill="#be185d"/></svg>
-    <svg class="mini-star" style="top:60%; left:50%"  viewBox="0 0 30 30"><polygon points="15,0 18,11 30,15 18,19 15,30 12,19 0,15 12,11" fill="#f472b6"/></svg>
-    <svg class="mini-star" style="top:70%; left:15%"  viewBox="0 0 30 30"><polygon points="15,0 18,11 30,15 18,19 15,30 12,19 0,15 12,11" fill="#ec4899"/></svg>
-    <svg class="mini-star" style="top:75%; left:78%"  viewBox="0 0 30 30"><polygon points="15,0 18,11 30,15 18,19 15,30 12,19 0,15 12,11" fill="#be185d"/></svg>
-    <svg class="mini-star" style="top:95%; left:25%"  viewBox="0 0 30 30"><polygon points="15,0 18,11 30,15 18,19 15,30 12,19 0,15 12,11" fill="#f472b6"/></svg>
-    <svg class="mini-star" style="top:50%; left:65%"  viewBox="0 0 30 30"><polygon points="15,0 18,11 30,15 18,19 15,30 12,19 0,15 12,11" fill="#ec4899"/></svg>
-
-
-
-    <div id="about-text">
-        <p id="about-label">About Me</p>
-        <h2 id="about-title">Crafting clean and scalable software solutions</h2>
-        <p id="about-desc">  I am a passionate Software Engineering student with a strong interest in developing innovative and practical solutions.
-            I’m building skills in front-end and back-end development, mobile apps, and database management — focused on creating
-            efficient, user-friendly applications.</p>
-        <div id="about-stats">
-
-
-            <div class="stat-card">
-
-                <a href="gallery.html" style="text-decoration:none;">
-
-                    <div class="stat-num">Gallery</div>
-                </a>
+<section class="about light" id="about" aria-labelledby="about-label">
+    <div class="sparkles" aria-hidden="true">
+            <i style="--x:83%;--y:10%;--c:#f472b6;--dl:0.0s;--s:18px"></i>
+            <i style="--x:96%;--y:28%;--c:#be185d;--dl:0.6s;--s:24px"></i>
+            <i style="--x:8%;--y:10%;--c:#ec4899;--dl:1.2s;--s:30px"></i>
+            <i style="--x:20%;--y:18%;--c:#f472b6;--dl:1.7999999999999998s;--s:18px"></i>
+            <i style="--x:38%;--y:8%;--c:#be185d;--dl:2.4s;--s:24px"></i>
+            <i style="--x:72%;--y:6%;--c:#f472b6;--dl:0.0s;--s:30px"></i>
+            <i style="--x:90%;--y:20%;--c:#be185d;--dl:0.6s;--s:18px"></i>
+            <i style="--x:4%;--y:35%;--c:#f472b6;--dl:1.2s;--s:24px"></i>
+            <i style="--x:92%;--y:40%;--c:#ec4899;--dl:1.7999999999999998s;--s:30px"></i>
+            <i style="--x:50%;--y:60%;--c:#f472b6;--dl:2.4s;--s:18px"></i>
+            <i style="--x:15%;--y:70%;--c:#ec4899;--dl:0.0s;--s:24px"></i>
+            <i style="--x:78%;--y:75%;--c:#be185d;--dl:0.6s;--s:30px"></i>
+            <i style="--x:25%;--y:92%;--c:#f472b6;--dl:1.2s;--s:18px"></i>
+    </div>
+    <div class="about-inner">
+        <div class="about-text reveal">
+            <h2 class="section-label" id="about-label">About Me</h2>
+            <p class="about-title">Crafting clean and scalable software solutions</p>
+            <p class="about-desc">I am a passionate Software Engineering student with a strong interest in developing innovative and practical solutions.
+                I’m building skills in front-end and back-end development, mobile apps, and database management — focused on creating
+                efficient, user-friendly applications.</p>
+            <div class="stats">
+                <a class="stat-card" href="gallery.html"><span class="stat-num">Gallery</span><span class="stat-label">My photos</span></a>
+                <a class="stat-card" href="education.html"><span class="stat-num">1.5yrs</span><span class="stat-label">Education</span></a>
+                <button class="stat-card" type="button" id="open-tech" aria-haspopup="dialog"><span class="stat-num">5+</span><span class="stat-label">Technologies</span></button>
             </div>
-
-
-
-            <div class="stat-card">
-                <a href="Education.html" style="text-decoration:none;">
-                <div class="stat-num">1.5yrs</div>
-                <div class="stat-label">Education</div>
-                </a>
-            </div>
-
-            <div class="stat-card">
-                <a href="#tech-popup" style="text-decoration:none;">
-                <div class="stat-num">5+</div>
-                <div class="stat-label">Technologies</div>
-                </a>
-            </div>
-
-            <div id="tech-popup" class="popup">
-
-                <div class="popup-content">
-
-                    <a href="#about" class="close-btn">&times;</a>
-
-                    <h2>Technologies</h2>
-
-                    <div class="tech-list">
-                        <p>
-                            I have hands-on experience working with modern web technologies including Java for backend development,
-                            and HTML, CSS, and JavaScript for building responsive user interfaces. I am also familiar with frameworks
-                            and libraries such as Bootstrap and jQuery to create efficient and user-friendly web applications.
-                        </p>
-                        <span>Java</span>
-                        <span>HTML</span>
-                        <span>CSS</span>
-                        <span>JavaScript</span>
-                        <span>Bootstrap</span>
-                        <span>jQuery</span>
-                    </div>
-
-                </div>
-
-            </div>
-
+        </div>
+        <div class="about-art reveal" style="--d:.15s">
+            <img src="assets/images/about.webp" width="1000" height="561" loading="lazy"
+                 alt="Illustration of Nadeeshi holding a laptop covered in developer stickers">
         </div>
     </div>
-    <div id="about-img-all">
-        <div id="about-img">
-            <img src="assets/lib/images/Gemini_Generated_Image_7i5zre7i5zre7i5z-Photoroom.png" />
-        </div>
 
-    </div>
-
+    <dialog class="tech-dialog" id="tech-dialog" aria-labelledby="tech-title">
+        <button class="dialog-close" type="button" aria-label="Close">&times;</button>
+        <h3 id="tech-title">Technologies</h3>
+        <p>I have hands-on experience with modern web technologies, including Java for backend development and HTML, CSS and JavaScript
+            for building responsive user interfaces. I’m also familiar with Bootstrap and jQuery for efficient, user-friendly web applications.</p>
+        <ul class="chips">
+            <li>Java</li><li>HTML</li><li>CSS</li><li>JavaScript</li><li>Bootstrap</li><li>jQuery</li>
+        </ul>
+    </dialog>
 </section>
 
-
-
-
-
-
-
-
-
-
-
-
-<section id="works">
-    <p id="works-label">My Work..</p>
-    <h2 id="works-title">My Work<br>Collection</h2>
+<section class="works dark" id="works" aria-labelledby="works-label">
+    <h2 class="section-label" id="works-label">My Work</h2>
+    <p class="works-title">Projects, assignments<br>&amp; study notes</p>
+    <p class="works-hint">Hover to pause the carousel — click a card to open it.</p>
 
     <div class="scene">
-        <div class="a3d" style="--n: 3">
-
-            <!-- c1 -->
-            <div class="card" style="--i:0">
-                <a href="project.html" class="work-link">
-                <div class="work-card">
-                    <div class="work-thumb"></div>
+        <div class="tilt">
+            <ul class="ring">
+                <li style="--i:0"><a class="work-card" href="projects.html">
+                    <div class="work-thumb" aria-hidden="true">{ }</div>
                     <div class="work-info">
-                        <h3>Project</h3>
-                        <p>A desktop productivity application developed using JavaFX to help users efficiently manage and organize daily tasks.</p>
+                        <h3>Projects</h3>
+                        <p>Java projects from my course: a stock management CLI, a Connect 4 game with an AI bot, and layered- and MVC-architecture gem management systems.</p>
                         <span class="tag">Java</span>
-                    </div>
-                </div>
-                </a>
-            </div>
-
-            <!-- c2 -->
-            <div class="card" style="--i:1">
-                <a href="exercise.html" class="work-link">
-                <div class="work-card">
-                    <div class="work-thumb"></div>
+                    </div></a></li>
+                <li style="--i:1"><a class="work-card" href="assignments.html">
+                    <div class="work-thumb" aria-hidden="true">&lt;/&gt;</div>
                     <div class="work-info">
-                        <h3>Exercise</h3>
-                        <p>A personal portfolio website designed in Figma and fully developed from scratch using modern web technologies.</p>
-                        <span class="tag">HTML · CSS · JS</span>
-                    </div>
-                </div>
-                </a>
-            </div>
-
-            <!--c3 -->
-            <div class="card" style="--i:2">
-                <a href="note.html" class="work-link">
-                    <div class="work-card">
-                        <div class="work-thumb"></div>
-                        <div class="work-info">
-                            <h3>Notes</h3>
-                            <p>A clean and user-friendly mobile app UI/UX design focused on enhancing student productivity.</p>
-                            <span class="tag">HTML · CSS · JS</span>
-                        </div>
-                    </div>
-                </a>
-            </div>
-
+                        <h3>Assignments</h3>
+                        <p>HTML &amp; CSS practice: layouts, CSS grid, keyframe animations and a pure-CSS car scene — each with a live preview and source code.</p>
+                        <span class="tag">HTML · CSS</span>
+                    </div></a></li>
+                <li style="--i:2"><a class="work-card" href="notes.html">
+                    <div class="work-thumb" aria-hidden="true">PDF</div>
+                    <div class="work-info">
+                        <h3>Notes</h3>
+                        <p>My study notes as free PDF downloads: Java PRF, OOP, DBMS and layered software architecture.</p>
+                        <span class="tag">Study notes</span>
+                    </div></a></li>
+            </ul>
         </div>
     </div>
 </section>
 
-
-
-
-
-
-
-<!--contact-->
-<section id="contact">
-
-    <!--   left-->
-    <div id="contact-text">
-        <p id="contact-label">Get In Touch</p>
-        <h2 id="contact-title">Let's work together</h2>
-        <p id="contact-desc">Have a project in mind or just want to say hi? Feel free to reach out — I'd love to connect!</p>
+<section class="contact light" id="contact" aria-labelledby="contact-label">
+    <div class="contact-inner">
+        <div class="reveal">
+            <h2 class="section-label" id="contact-label">Get In Touch</h2>
+            <p class="contact-title">Let’s work together</p>
+            <p class="contact-desc">Have a project in mind or just want to say hi? Feel free to reach out — I’d love to connect!</p>
+            <p class="contact-direct">
+                <a class="mail" href="mailto:nadeeshisavindi@gmail.com">nadeeshisavindi@gmail.com</a>
+                <button type="button" class="btn" id="copy-mail" data-mail="nadeeshisavindi@gmail.com">Copy email</button>
+            </p>
+        </div>
+        <form class="contact-form reveal" id="contact-form" data-to="nadeeshisavindi@gmail.com" style="--d:.15s" novalidate>
+            <div class="form-row">
+                <div class="field"><label for="f-name">Name</label>
+                    <input id="f-name" name="name" type="text" placeholder="Your name" autocomplete="name" required></div>
+                <div class="field"><label for="f-email">Email</label>
+                    <input id="f-email" name="email" type="email" placeholder="you@example.com" autocomplete="email" required></div>
+            </div>
+            <div class="field"><label for="f-subject">Subject</label>
+                <input id="f-subject" name="subject" type="text" placeholder="What is this about?" required></div>
+            <div class="field"><label for="f-message">Message</label>
+                <textarea id="f-message" name="message" placeholder="Write your message…" required minlength="10"></textarea></div>
+            <button class="btn-send" type="submit">Send Message</button>
+            <p class="form-status" id="form-status" role="status" aria-live="polite"></p>
+        </form>
     </div>
-
-    <!--   right-->
-    <form id="contact-form" action="mailto:nadeeshisavindi@gmail.com" method="POST" enctype="text/plain">
-
-        <div id="form-row">
-            <div class="form-group">
-                <label>Name :</label>
-                <input type="text" name="name" placeholder="Your name" required>
-            </div>
-
-            <div class="form-group">
-                <label>Email :</label>
-                <input type="email" name="email" placeholder="Your email" required>
-            </div>
-        </div>
-
-        <div class="form-group">
-            <label>Subject :</label>
-            <input type="text" name="subject" placeholder="Subject" required>
-        </div>
-
-        <div class="form-group">
-            <label>Message :</label>
-            <textarea name="message" placeholder="Write your message..." required></textarea>
-        </div>
-
-        <button id="btn-send" type="submit">Send Message</button>
-
-    </form>
-
 </section>
 
-
-
-
-<!-- footer -->
-<footer>
-    <span id="footer-logo">Rannul</span>
-    <ul id="footer-links">
-        <li><a href="#hero">Home</a></li>
-        <li><a href="#works">Works</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#contact">Contact</a></li>
+</main>
+<footer class="site-footer">
+    <a class="footer-logo" href="index.html" aria-label="Rannul — home">Rannul</a>
+    <ul class="footer-links">
+        <li><a href="index.html#hero">Home</a></li>
+        <li><a href="index.html#about">About</a></li>
+        <li><a href="index.html#works">Work</a></li>
+        <li><a href="index.html#contact">Contact</a></li>
     </ul>
-    <span id="footer-copy">© 2024 Nadeeshi. All rights reserved.</span>
+    <small class="footer-copy">&copy; <span id="year">2026</span> Nadeeshi Savindi. All rights reserved.</small>
 </footer>
-
-
-
-
-<script src="assets/js/javascript.js"></script>
-
-
+<script src="assets/js/main.js"></script>
+<script src="assets/js/home.js"></script>
 </body>
 </html>

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Assignment 3 | Nadeeshi</title>
+    <meta name="description" content="Keyframe animation: a box that moves, rotates and changes colour">
+    <meta name="author" content="Nadeeshi Savindi">
+    <link rel="icon" href="../assets/images/favicon.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="../assets/css/normalize.css">
+    <link rel="stylesheet" href="../assets/css/preview.css">
+    <style>
+        body { overflow: hidden; }
+        .box {
+            width: 250px; height: 100px;
+            background-color: orange;
+            border-radius: 20px;
+            position: relative;
+            animation: roam 4s infinite alternate;
+        }
+        @keyframes roam {
+            0%   { margin: 0;                                              transform: rotate(0deg);   background-color: blue; }
+            25%  { margin: 0 0 0 calc(100vw - 250px);                       transform: rotate(180deg); background-color: yellow; }
+            50%  { margin: calc(100vh - 100px) 0 0 calc(100vw - 250px);     transform: rotate(0deg);   background-color: red; }
+            75%  { margin: calc(100vh - 100px) 0 0 0;                       transform: rotate(180deg); background-color: deeppink; }
+        }
+        @media (prefers-reduced-motion: reduce) { .box { animation: none; } }
+    </style>
+</head>
+<body>
+    <a class="preview-back" href="../assignments.html">← Back</a>
+    <div class="box" role="img" aria-label="Animated box moving around the screen"></div>
+</body>
+</html>
